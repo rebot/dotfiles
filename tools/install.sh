@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Set your locale
+setxkbmap be # Belgium Azerty configuration in X KeyBoard extension - part of X11
+
 # Update the linux distribution (Kali/Ubuntu/Raspbian)
 sudo apt update && sudo apt full-upgrade -y
 
