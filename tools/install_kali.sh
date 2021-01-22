@@ -42,7 +42,7 @@ sudo dpkg-reconfigure openssh-server # Generate some new ssh keys
 sudo sed -rie 's/^(.*):.*/\1:\/bin\/zsh/i' /etc/passwd 0>/dev/null
 
 # In[5]: Install Oh-my-zsh and configure it
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+#sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 rm .zshrc.pre-oh-my-zsh # Remove the old configuration file ohmyzsh saved
 
 sed -i 's/ZSH_THEME=.*/ZSH_THEME=""/' ~/.zshrc
