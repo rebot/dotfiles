@@ -13,9 +13,9 @@ function install { # Install only takes one argument
   if [ $? -ne 0 ]; then # Check if the status of the last cmd is unsuccesfull (not equal to 0)
     echo "Installing: ${1}..."
     sudo apt install -y $1 # -y flag is equal to --yes and will answer yes to all prompts
-  else
+  else 
     echo "Already installed: ${1}"
-  fi
+  fi 
 }
 
 # Basics
