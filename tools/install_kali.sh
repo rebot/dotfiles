@@ -2,7 +2,7 @@
 
 sudo apt update
 
-function install {
+install () {
     which $1 &>/dev/null
 
     if [ $? -ne 0 ]; then
@@ -10,7 +10,7 @@ function install {
         sudo apt install -y $1
     else
         echo "Already installed: ${1}"
-    fi
+    fi 
 }
 
 # In[1]: Install mDNS and make the pi discoverable
